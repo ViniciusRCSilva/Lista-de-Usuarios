@@ -12,6 +12,7 @@ Este projeto foi desenvolvido como parte de um estudo sobre React, GraphQL e Apo
 ## Funcionalidades do Projeto
 - **Listagem de Usuários**: Os usuários são recuperados através de consultas GraphQL e exibidos na interface do usuário usando componentes React.
 - **Adição de Usuários**: Utilizando mutações GraphQL, é possível adicionar novos usuários à lista.
+- **Edição de Usuários**: Os dados dos usuários podem ser editados através de mutações GraphQL, permitindo a atualização de informações existentes na lista.
 - **Remoção de Usuários**: Os usuários existentes podem ser removidos da lista por meio de mutações GraphQL.
 
 ## Execução do Projeto
