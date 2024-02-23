@@ -3,6 +3,7 @@ import { FormEvent, useEffect, useState } from "react"
 import { GET_USERS } from "./UsersList"
 import { client } from "../lib/apollo"
 import { toast } from 'sonner'
+import { PlusCircle } from "@phosphor-icons/react"
 
 const CREATE_USER = gql`
     mutation($name: String!) {
@@ -54,7 +55,7 @@ export function NewUserForm() {
     })
 
     return(
-      <form onSubmit={handleCreateUser} className="w-full">
+      <form onSubmit={handleCreateUser} className="flex items-center w-full">
         <input 
             type="text" 
             placeholder="Inserir usuário..."
@@ -66,9 +67,10 @@ export function NewUserForm() {
         <button 
             type="submit" 
             disabled={disabled}
-            className="w-1/4 px-5 py-4 text-3xl bg-white text-slate-900 rounded-lg font-medium opacity-100 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed hover:scale-105 transition-all"
+            className="flex items-center justify-center w-1/4 py-4 gap-2 text-3xl bg-white text-slate-900 rounded-lg font-medium opacity-100 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed hover:scale-105 transition-all"
         >
             Adicionar
+            <PlusCircle />
         </button>
       </form>  
     )
