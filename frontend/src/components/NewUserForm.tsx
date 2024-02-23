@@ -51,7 +51,6 @@ export function NewUserForm() {
 
     useEffect(() => {
         handleDisable()
-        console.log(disabled)
     })
 
     return(
